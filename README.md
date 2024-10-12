@@ -16,3 +16,26 @@ async_job(function () use ($dateTime) {
     exec('sudo hwclock --systohc');
 });
 ```
+
+### php7.4 + oci8拓展
+```
+1：mkdir /opt/oracle
+2:上传3个文件到这个目录下 sdk-10.2.0.5.0-linux-x64.zip  basic-10.2.0.5.0-linux-x64.zip  oci8-2.2.0.tgz
+3：unzip basic-10.2.0.5.0-linux-x64.zip
+4：unzip sdk-10.2.0.5.0-linux-x64.zip
+5: unzip oci8-2.2.0.tgz
+6: ln -s /opt/oracle/instantclient_10_2/libclntsh.so.10.1 /opt/oracle/instantclient_10_2/libclntsh.so
+7：ln -s /opt/oracle/instantclient_10_2/libocci.so.10.1 /opt/oracle/instantclient_10_2/libocci.so
+8： sudo -s
+9： echo /opt/oracle/instantclient_10_2 > /etc/ld.so.conf.d/oracle-instantclient.conf
+10： ldconfig
+11： cd oci8-2.2.0
+12： apt install autoconf
+13： phpize
+14： ./configure --with-oci8=shared,instantclient,/opt/oracle/instantclient_10_2
+15： make install
+16： echo "extension=oci8.so" |sudo tee -a /etc/php/7.4/cli/php.ini
+17： echo "extension=oci8.so" |sudo tee -a /etc/php/7.4/fpm/php.ini
+18： systemctl restart php7.4-fpm
+
+```
