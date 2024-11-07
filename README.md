@@ -39,3 +39,11 @@ async_job(function () use ($dateTime) {
 18： systemctl restart php7.4-fpm
 
 ```
+
+### ubuntu 18 安装php7.4
+```
+sudo apt -y install software-properties-common
+sudo add-apt-repository ppa:andykimpe/php
+sudo apt update && sudo apt upgrade
+sudo apt install php7.4
+```
