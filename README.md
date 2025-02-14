@@ -2,7 +2,9 @@
 ### ppa 仓库搜搜地址： https://launchpad.net/
 ### PHP Event Dispatcher PSR-14   https://dev.to/fadymr/php-create-your-own-php-psr-14-event-dispatcher-200b
 ### xhprof  https://www.cnblogs.com/jkko123/p/10697575.html
-### docker hub 镜像加速可用目前    https://gist.github.com/y0ngb1n/7e8f16af3242c7815e7ca2f0833d3ea6?permalink_comment_id=5082662#gistcomment-5082662
+### docker hub 镜像加速可用目前    
+1. https://1ms.run
+2. https://gist.github.com/y0ngb1n/7e8f16af3242c7815e7ca2f0833d3ea6?permalink_comment_id=5082662#gistcomment-5082662
 
 ### PHP修改linux时间
 ```
