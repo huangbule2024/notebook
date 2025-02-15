@@ -49,3 +49,6 @@ sudo add-apt-repository ppa:andykimpe/php
 sudo apt update && sudo apt upgrade
 sudo apt install php7.4
 ```
+
+### 浅谈之 - PHP 项目代码加密方案
+1. https://kebingzao.com/2022/09/20/php-encry/
